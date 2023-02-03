@@ -1,0 +1,14 @@
+*.Rproj.user
+*.Rhistory
+*.RData
+*.Ruserdata
+*_cache/
+*.rdb
+*.rdx
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.gz
+*.gz
+.Rproj.user

@@ -1,0 +1,6 @@
+# Data
+Remember kids: there is almost never a reason to deviate from .csv files. The main exceptions to this are particularly large data sets (the correct format for this is almost always dictated by the data generation process) or some form of nested data (in which case, tend towards JSON)
+
+If you are a Stata diehard and absolutely need your variable descriptions, you can use .dat without many issues, but you can also write a script to replicate the variable descriptors and include it in your default loading process. This saves on time and space, and allows for you to keep your raw, tidy, and named data in the same format.
+
+**Of Critical Importance** to any project like this is *tidy data*. There is already an article in this project outlining tidy data as a best practice. This project setup assumes that you will *always* be working from raw data → tidy data → summarizations → analysis regardless of the project. Each step should be independent (working from the previous input *only*) and completley replicable.

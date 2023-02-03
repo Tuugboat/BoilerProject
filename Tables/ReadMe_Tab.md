@@ -1,0 +1,5 @@
+# Tables
+
+Tables storage is typically dictated by your eventual editor. If you are using Latex, I strongly suggest finding a method to output tables directly to Tex. For Stata, this almost certainly means `estout` and `esttab`. For R, `Stargazer` is your best option. This is autoloaded by `include.R`. Python has more variety, but use `tabulate` or `texttable` if you don't have a preference yet. All of these will output a .tex file that can be loaded with `\include{}` in the Latex file.
+
+If you are using RMarkdown, your best bet is to save your data summary as a .csv and then write `kableExtra` snippets directly in the document. If you are doing extensive summarization, I recommend creating TableGen_ files, summarizing there, and saving the kable output as an .RDS which can be loaded and displayed in rmd by simply calling that variable.

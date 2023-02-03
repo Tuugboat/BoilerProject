@@ -1,0 +1,62 @@
+\documentclass{article}
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+
+% R Table packages
+% booktabs and float are used frequently by kableExtra output from R
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+% Page layout libraries
+\usepackage{a4wide}
+\usepackage{setspace}
+\usepackage{geometry}
+%\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+
+% Setting up the heading style preferred here
+\pagestyle{fancy}
+\fancyhead[L]{\thepage}
+\fancyhead[C]{}
+\fancyhead[R]{\textrm{Robert Petit}}
+\fancyfoot[L, C, R]{}
+
+
+% this package helps us with including images. Setting the graphics path makes it easier to refer to things in the \includegraphics command.
+\usepackage{graphicx}
+\graphicspath{ {../Figures/} } % Auto-points to the default file
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% And finally, continuing on my crusade to make Helvetica the universal standard
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
+
+% Titling
+\title{ADD TITLE}
+\author{Robert Petit}
+\date{ADD DATE}
+
+\begin{document}
+\maketitle
+
+A slight amount of body is needed to successfully build \cite{Petit11}
+
+% Bibliography inclusion. 
+
+% Other good styles are `apalike` (good) and `apa` (for traditionalists)
+\bibliographystyle{plain}
+
+\bibliography{Bibliography}
+
+
+
+\end{document} 
