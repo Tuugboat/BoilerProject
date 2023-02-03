@@ -10,5 +10,8 @@
 *.fls
 *.synctex.gz
 *.gz
-*.gz
+*.log
+*.bbl
+*.blg
+*.out
 .Rproj.user
